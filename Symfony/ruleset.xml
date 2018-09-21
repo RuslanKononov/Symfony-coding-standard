@@ -31,6 +31,7 @@
     <rule ref="Squiz.Strings.ConcatenationSpacing">
         <properties>
             <property name="ignoreNewlines" value="true"/>
+            <property name="spacing" value="1"/>
         </properties>
     </rule>
 
@@ -46,9 +47,6 @@
         <exclude name="PEAR.ControlStructures.ControlSignature"/>
 
         <exclude name="PEAR.Commenting.FunctionComment.SpacingBeforeTags"/>
-
-        <!-- do not check line length -->
-        <exclude name="Generic.Files.LineLength"/>
 
         <!-- covered by Squiz FunctionDeclarationSniff -->
         <exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
@@ -84,7 +82,7 @@
     </rule>
 
     <rule ref="Symfony.Commenting.ClassComment.Missing">
-        <type>error</type>
+        <severity>0</severity>
     </rule>
 
     <rule ref="Symfony.Commenting.ClassComment.Blacklisted">
@@ -100,6 +98,10 @@
     </rule>
 
     <rule ref="Symfony.ControlStructure.YodaConditions">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Symfony.Functions.Arguments">
         <severity>0</severity>
     </rule>
 
