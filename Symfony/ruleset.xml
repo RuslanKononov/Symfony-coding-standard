@@ -110,6 +110,4 @@
     <rule ref="Symfony.Commenting.ClassComment.SpacingBeforeTags">
         <message>There should always be a description, followed by a blank line, before the tags of a class comment.</message>
     </rule>
-    <!-- Forbid suffix "Abstract" for abstract classes -->
-    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"/>
 </ruleset>
